@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/refreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".ui.fragment.OneFragment">
+
+           <include layout="@layout/sousuo"/>
+            <!--轮播-->
+            <com.recker.flybanner.FlyBanner
+                android:id="@+id/one_Flybanner"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+            <!--九宫格-->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/one_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorwhite"></android.support.v7.widget.RecyclerView>
+            <!--跑马灯-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/pmd_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="   京东"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@color/colorRed"
+                    android:padding="1dp"
+                    android:text="快报"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <ViewFlipper
+                    android:id="@+id/pmd_dilpper"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:autoStart="true"
+                    android:flipInterval="2000"
+                    android:inAnimation="@anim/anim_come_in"
+                    android:outAnimation="@anim/anim_get_out">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="喜迎中秋!稻香村玫瑰月饼上线" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="满50000送199飞科剃须刀" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="HV官方旗靓店正式入驻京东" />
+                </ViewFlipper>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="5dp"
+                    android:text="|更多"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <!--秒杀-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <include layout="@layout/count_ms" />
+                </RelativeLayout>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/one_recyler2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorwhite"></android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_horizontal"
+                android:text="为/你/推/荐"
+                android:textColor="#ffccff"
+                android:textSize="25dp" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/one_recyler3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorwhite"></android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+    </ScrollView>
+
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

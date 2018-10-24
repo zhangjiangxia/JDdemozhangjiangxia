@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.activtiy.RagActivtiy">
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@mipmap/gg"
+
+    />
+    <EditText
+
+        android:id="@+id/rag_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="用户名/邮箱/手机号"/>
+    <EditText
+        android:id="@+id/rag_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入注册密码"/>
+    <Button
+        android:id="@+id/rag_button"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/login_shape"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:text="注册"
+        />
+</LinearLayout>

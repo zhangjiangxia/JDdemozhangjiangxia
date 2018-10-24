@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        >
+        <ImageView
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_access_alarms_black_24dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="京东秒杀"
+            android:textColor="#f00"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_miaosha_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="14点场"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_miaosha_shi"
+                android:layout_width="20dp"
+                android:layout_height="25dp"
+                android:background="@drawable/ms_bg"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/tv_miaosha_minter"
+                android:layout_width="20dp"
+                android:layout_height="25dp"
+                android:background="@drawable/ms_bg"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/tv_miaosha_second"
+                android:layout_width="20dp"
+                android:layout_height="25dp"
+                android:background="@drawable/ms_bg"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:text="五一慢行领好货"-->
+            <!--android:textSize="13dp"-->
+            <!--android:textColor="#ff0000"-->
+            <!--/>-->
+    </LinearLayout>
+</LinearLayout>
